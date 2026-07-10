@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaWear</title>
+
+<title>NovaWear | Streetwear Premium</title>
+
+<meta name="description" content="NovaWear - Streetwear Premium en Belgique">
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -14,15 +26,24 @@
 <header>
 
 <div class="logo">
+
 NOVAWEAR
+
 </div>
 
 <nav>
 
 <a href="index.html">Accueil</a>
+
 <a href="boutique.html">Boutique</a>
+
 <a href="panier.html">Panier</a>
+
 <a href="contact.html">Contact</a>
+
+<a href="livraison.html">Livraison</a>
+
+<a href="apropos.html">À propos</a>
 
 </nav>
 
@@ -30,13 +51,35 @@ NOVAWEAR
 
 <section class="hero">
 
-<h1>Streetwear Premium</h1>
+<div class="hero-content">
 
-<p>Découvrez la nouvelle collection NovaWear.</p>
+<p class="small-title">
+
+NOUVELLE COLLECTION
+
+</p>
+
+<h1>
+
+Streetwear<br>
+
+Premium
+
+</h1>
+
+<p>
+
+Des vêtements modernes, sobres et confortables.
+
+Créés pour ceux qui veulent un style unique.
+
+</p>
+
+<div class="hero-buttons">
 
 <a href="boutique.html">
 
-<button>
+<button class="btn-black">
 
 Découvrir
 
@@ -44,61 +87,207 @@ Découvrir
 
 </a>
 
+<a href="contact.html">
+
+<button class="btn-white">
+
+Nous contacter
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="nouveautes">
+<section class="collection">
 
-<h2>Nouveautés</h2>
+<h2>
 
-<div class="cards">
+Nos Best Sellers
+  <div class="card">
 
-<div class="card">
+<img src="images/tshirt.jpg" alt="T-shirt NovaWear">
 
-<img src="https://via.placeholder.com/300x350">
+<div class="card-content">
 
 <h3>T-shirt NovaWear</h3>
 
-<p>24,99 €</p>
+<p class="price">24,99 €</p>
 
-<button>Ajouter au panier</button>
+<p>Un t-shirt premium au style minimaliste.</p>
+
+<button onclick="ajouterAuPanier('T-shirt NovaWear',24.99)">
+Ajouter au panier
+</button>
+
+</div>
 
 </div>
 
 <div class="card">
 
-<img src="https://via.placeholder.com/300x350">
+<img src="images/hoodie.jpg" alt="Hoodie NovaWear">
+
+<div class="card-content">
 
 <h3>Hoodie NovaWear</h3>
 
-<p>49,99 €</p>
+<p class="price">49,99 €</p>
 
-<button>Ajouter au panier</button>
+<p>Confort, qualité et style pour tous les jours.</p>
+
+<button onclick="ajouterAuPanier('Hoodie NovaWear',49.99)">
+Ajouter au panier
+</button>
+
+</div>
 
 </div>
 
 <div class="card">
 
-<img src="https://via.placeholder.com/300x350">
+<img src="images/short.jpg" alt="Short NovaWear">
+
+<div class="card-content">
 
 <h3>Short NovaWear</h3>
 
-<p>29,99 €</p>
+<p class="price">29,99 €</p>
 
-<button>Ajouter au panier</button>
+<p>Parfait pour l'été et les tenues streetwear.</p>
+
+<button onclick="ajouterAuPanier('Short NovaWear',29.99)">
+Ajouter au panier
+</button>
 
 </div>
 
 </div>
+
+</div>
+
+</section>
+
+<section class="about-home">
+
+<div class="about-text">
+
+<h2>Pourquoi choisir NovaWear ?</h2>
+
+<p>
+
+Nous créons des vêtements modernes avec un design minimaliste,
+des matières confortables et une qualité pensée pour durer.
+
+</p>
+
+<ul>
+
+<li>✔ Design premium</li>
+
+<li>✔ Livraison en Belgique</li>
+
+<li>✔ Qualité supérieure</li>
+
+<li>✔ Service client rapide</li>
+
+</ul>
+
+<a href="apropos.html">
+
+<button class="btn-black">
+
+En savoir plus
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+</h2>
+
+<div class="cards">
+  <section class="newsletter">
+
+<h2>Rejoins NovaWear</h2>
+
+<p>
+
+Inscris-toi pour recevoir les nouveautés et les offres exclusives.
+
+</p>
+
+<form>
+
+<input type="email" placeholder="Votre adresse e-mail">
+
+<button type="submit">S'inscrire</button>
+
+</form>
 
 </section>
 
 <footer>
 
-<p>© 2026 NovaWear</p>
+<div class="footer-container">
+
+<div>
+
+<h3>NOVAWEAR</h3>
+
+<p>Streetwear Premium</p>
+
+<p>Belgique 🇧🇪</p>
+
+</div>
+
+<div>
+
+<h3>Navigation</h3>
+
+<p><a href="index.html">Accueil</a></p>
+
+<p><a href="boutique.html">Boutique</a></p>
+
+<p><a href="contact.html">Contact</a></p>
+
+<p><a href="livraison.html">Livraison</a></p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📧 novawear.be@gmail.com</p>
+
+<p>Instagram : @novawear</p>
+
+<p>TikTok : @novawear</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 NovaWear — Tous droits réservés.
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
