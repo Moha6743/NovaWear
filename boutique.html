@@ -1,56 +1,260 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique - NovaWear</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Boutique | NovaWear</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
 <header>
-    <h1>NovaWear</h1>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="boutique.html">Boutique</a>
-        <a href="contact.html">Contact</a>
-        <a href="livraison.html">Livraison</a>
-    </nav>
+
+<div class="logo">
+NOVAWEAR
+</div>
+
+<nav>
+
+<a href="index.html">Accueil</a>
+
+<a href="boutique.html">Boutique</a>
+
+<a href="panier.html">Panier</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="livraison.html">Livraison</a>
+
+<a href="apropos.html">À propos</a>
+
+</nav>
+
 </header>
 
-<section class="hero">
-    <h2>Notre Boutique</h2>
-    <p>Découvrez tous nos produits.</p>
+<section class="collection">
+
+<h2>Notre Collection</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/tshirt.jpg" alt="T-shirt NovaWear">
+
+<div class="card-content">
+
+<h3>T-shirt Oversize Noir</h3>
+
+<p class="price">24,99 €</p>
+
+<p>
+100% coton premium.
+Coupe oversize.
+</p>
+
+<button onclick="ajouterAuPanier('T-shirt Oversize Noir',24.99)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/hoodie.jpg" alt="Hoodie NovaWear">
+
+<div class="card-content">
+
+<h3>Hoodie Premium</h3>
+
+<p class="price">49,99 €</p>
+
+<p>
+Hoodie épais avec intérieur doux.
+</p>
+
+<button onclick="ajouterAuPanier('Hoodie Premium',49.99)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="images/short.jpg" alt="Short NovaWear">
+
+<div class="card-content">
+
+<h3>Short Essential</h3>
+
+<p class="price">29,99 €</p>
+
+<p>
+Short confortable pour un style streetwear.
+</p>
+
+<button onclick="ajouterAuPanier('Short Essential',29.99)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/casquette.jpg" alt="Casquette NovaWear">
+
+<div class="card-content">
+
+<h3>Casquette NovaWear</h3>
+
+<p class="price">19,99 €</p>
+
+<p>
+Casquette noire avec logo brodé.
+</p>
+
+<button onclick="ajouterAuPanier('Casquette NovaWear',19.99)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/jogging.jpg" alt="Jogging NovaWear">
+
+<div class="card-content">
+
+<h3>Jogging Premium</h3>
+
+<p class="price">39,99 €</p>
+
+<p>
+Jogging épais, coupe moderne.
+</p>
+
+<button onclick="ajouterAuPanier('Jogging Premium',39.99)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/ensemble.jpg" alt="Ensemble NovaWear">
+
+<div class="card-content">
+
+<h3>Ensemble NovaWear</h3>
+
+<p class="price">69,99 €</p>
+
+<p>
+Hoodie + jogging assortis.
+</p>
+
+<button onclick="ajouterAuPanier('Ensemble NovaWear',69.99)">
+Ajouter au panier
+</button>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+<section class="newsletter">
 
-<section class="products">
+<h2>Ne manque aucune nouveauté</h2>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/250" alt="T-shirt">
-        <h3>T-shirt NovaWear</h3>
-        <p>24,99 €</p>
-        <button>Commander</button>
-    </div>
+<p>
+Inscris-toi pour recevoir les nouvelles collections et les offres exclusives.
+</p>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/250" alt="Hoodie">
-        <h3>Hoodie NovaWear</h3>
-        <p>49,99 €</p>
-        <button>Commander</button>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/250" alt="Short">
-        <h3>Short NovaWear</h3>
-        <p>29,99 €</p>
-        <button>Commander</button>
-    </div>
+<form>
+<input type="email" placeholder="Votre adresse e-mail" required>
+<button type="submit">S'inscrire</button>
+</form>
 
 </section>
 
 <footer>
-    <p>© 2026 NovaWear</p>
+
+<div class="footer-container">
+
+<div>
+
+<h3>NOVAWEAR</h3>
+
+<p>Streetwear Premium</p>
+
+<p>Belgique 🇧🇪</p>
+
+</div>
+
+<div>
+
+<h3>Navigation</h3>
+
+<p><a href="index.html">Accueil</a></p>
+<p><a href="boutique.html">Boutique</a></p>
+<p><a href="panier.html">Panier</a></p>
+<p><a href="contact.html">Contact</a></p>
+
+</div>
+
+<div>
+
+<h3>Service</h3>
+
+<p><a href="livraison.html">Livraison</a></p>
+<p><a href="apropos.html">À propos</a></p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📧 novawear.be@gmail.com</p>
+
+<p>Instagram : @novawear</p>
+
+<p>TikTok : @novawear</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 NovaWear — Tous droits réservés.
+</p>
+
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
